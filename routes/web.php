@@ -8,7 +8,7 @@ use App\Http\Controllers\BerandaController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return redirect()->secure('login');
+    return redirect()->route('login');
 });
 
 Route::middleware('auth')->group(function () {
